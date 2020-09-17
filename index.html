@@ -1,29 +1,489 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
 
-  <title>Otavio Zabaleta</title>
-  <meta name="author" content="Otavio Zabaleta">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
-   <nav id="primary-menu">
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Otavio Zabaleta</h1>
+                <h2 class="desc">iOS Developer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/otaviokz/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/otaviokz"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/884744/otaviokz"><i class="fab fa-stack-overflow"></i></a></li>
+                    <!-- <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li> -->
+                </ul>
+            </div>
+            <a class="btn btn-cta-primary float-right" href="mailto:otaviokz@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+    </header>
 
-     <ul>
-       <!-- <li class="current mega-menu"><a href="http://www.guillembruix.com/#" data-scrollto="#portfolio-filter"><div>Portfolio</div></a></li> -->
-       <li><a href="https://uk.linkedin.com/in/otaviokz"><div>About me</div></a></li>
-       <li ><a href="https://docs.google.com/document/d/1kWGDfmYGjgHE--xBhVEfJL-f7pNkuZpOhYxvFMWyuF0/edit?usp=sharing"><div>CV</div></a></li>
-       <li ><a href="mailto:otaviokz@gmail.com" target="_blank"><div>Contact</div></a></li>
-     </ul>
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>Experient iOS developer looking for an assignment ​in an agile environment where I can work with iOS apps, be it greenfield or ongoing.</p>
+                        </div>
+                    </div>
+                </section>
 
-   </nav><!--
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://apps.apple.com/gb/app/dplay-stream-something-real/id395972146" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/dplay.png" alt="project name" />
+                                    </a>
+                                    <!-- <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div> -->
+                                </div>
+
+                                <h3 class="title mb-3"><a href="https://apps.apple.com/gb/app/dplay-stream-something-real/id395972146" target="_blank">dplay iOS</a></h3>
+
+                                <div class="desc text-left">
+                                    <p>The new and improved app still lets you stream all your favourite TV shows from Quest, Really, Quest Red, Food Network, DMAX and HGTV.</p>
+                                    <p><a class="more-link" href="https://apps.apple.com/gb/app/dplay-stream-something-real/id395972146" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://apps.apple.com/gb/app/fordpass-parking-roadside/id1141464928" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/fordpass.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://apps.apple.com/gb/app/fordpass-parking-roadside/id1141464928" target="_blank">FordPass iOS</a></h3>
+                                    <p class="mb-2">The app offers a whole range of connected features for vehicles with built-in modems, like remote controls and Wi-Fi on the road. It helps you keep your Ford running at its best, with Health Alerts sent straight to your phone, and in-app service booking to take the hassle out of maintenance. You can even use the app to search for restaurants, cafes, petrol stations and parking spaces. And send locations straight to your vehicle’s navigation, ready for when you leave.</p>
+                                    <p><a class="more-link" href="https://apps.apple.com/gb/app/fordpass-parking-roadside/id1141464928" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://apps.apple.com/gb/app/bbc-iplayer/id416580485" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/iplayer.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://apps.apple.com/gb/app/bbc-iplayer/id416580485" target="_blank">BBC iPlayer</a></h3>
+                                    <p class="mb-2">BBC iPlayer brings you the latest and greatest TV series and box sets from the BBC. Watch live, on-demand or download to take away with you - all in one app!</p>
+                                    <p><a class="more-link" href="https://apps.apple.com/gb/app/bbc-iplayer/id416580485" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://apps.apple.com/gb/app/playtime-island-from-cbeebies/id1140156471" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/cbeebies.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://apps.apple.com/gb/app/playtime-island-from-cbeebies/id1140156471" target="_blank">Playtime Island for CBeebies</a></h3>
+                                    <p class="mb-2">Kids can learn as they play with CBeebies favourites, Hey Duggee, Go Jetters, Swashbuckle, Peter Rabbit, Bing and more! There are 30 free games to choose from and each one meets the specific needs of children and their parents or carers, with a focus on bonding, learning, discovery and self-expression.</p>
+                                    <p><a class="more-link" href="https://apps.apple.com/gb/app/playtime-island-from-cbeebies/id1140156471" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://apps.apple.com/gb/app/radiox/id297701537" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/global.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://apps.apple.com/gb/app/radiox/id297701537" target="_blank">Global Radio App</a></h3>
+                                    <p><a class="more-link" href="https://apps.apple.com/gb/app/radiox/id297701537" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="item row">
+                              <a class="col-md-4 col-12" href="https://apps.apple.com/gb/app/radiox/id297701537" target="_blank">
+                              <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/ecnagent.png" alt="project name" />
+                              </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://www.youtube.com/embed/iCh9vETbsuk" target="_blank">ECN Monitor</a></h3>
+                                    <p class="mb-2">EasyContactNow Dashboard for iPad offers full monitoring functionality of your agents’ productivity and your contact centre’s performance, setting new standards in performance analytics, business and remote worker management. Our business monitoring app comes equipped with a real-time customisable library of widgets. The dashboard offers customisable widgets for two different levels of users.</p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+
+                                <div class="desc col-md-8 col-12">
+                                  <p class="mb-2">Demo Video</p>
+                                  <iframe width="100%" max-width="672" height="378" max-height="100%" src="https://www.youtube.com/embed/iCh9vETbsuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <div class="item row">
+                                <a class="col-md-4 col-12" href="" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/fordpass.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">XXXXX</a></h3>
+                                    <p class="mb-2">XXXXX</p>
+                                    <p><a class="more-link" href="" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank">Pillar - Free Bootstrap 4 Resume/CV Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank">DevBlog - Free Bootstrap 4 Blog Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank">Nova - Free App Landing Page Template for App Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+
+                            <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+
+                        </div>
+                    </div>
+                </section> -->
+
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">Discovery Networks</a></span> <span class="year">(May 2019 – Apr 2020)</span></h3>
+                                <p>Work involved data caching, ​SwiftUI,​ ​RXSwift​, internationalization/localization, UI builder engine that consumes Discovery’s CMS in order to present the most relevant and compelling content to users, Apple TV version, interaction with Chromecast. Swift 4. Source control via GIT and code merged via reviewed Pull Requests.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">Ford Motors</a></span> <span class="year">(April 2017 – May 2019)</span></h3>
+                                <p>Working on Ford’s flagship app directed to vehicle owners, involving a wide range of different functionalities and technologies. Implemented asynchronous access to restful WebServices, data caching and persisting, search and plotting of POI’s in maps, internationalization/localization, defining UI and layout constraints via both Interface Builder and code, MVVM and flow managers, interoperating Swift 3 and 4 with Objective C. Worked in a pair programming and TDD environment. Source control via GIT and code merged via reviewed Pull Requests.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">TwentySixDigital</a></span> <span class="year">(December 2016, February 2017)</span></h3>
+                                <p>Working on a Health Industry related app that communicates constantly with a backend CMS via REST Web Services. Implementing a UI that’s strongly reactive to images and theme defined outside of the mobile app. Was challenged to get many moving parts, animations and local configurations to work seamlessly together. Also implemented background data synchronization triggered by the receiving of Apple Push Notifications. All development done in Swift 3.0, with use of 3rd party frameworks via Cocoapods and source code management done with GIT.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">BBC Manchester</a></span> <span class="year">(​May 2016 – July 2016)</span></h3>
+                                <p>Working on iPlayer iOS App maintenance as well as delivering new features. All development done in Objective-C with strong use of OCMock for Unit Testing.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">BBC Manchester</a></span> <span class="year">(​November 2015 – April 2016)</span></h3>
+                                <p>Working on a children directed mobile app. Focused on hybrid app development using ​Swift language and using and WKWebView to support running html apps. Work involved developing a reusable set of native classes and functionality concerning downloading and running web apps, as well as some javascript libraries through which web apps could send and receive data. Relevant API and libraries used: WKWebView, NSOperation, NSAccessibility, NSLayout, CocoaPods, AFNetworking, GCDWebServer, CocoaLumberjack, Pixi.js, 3rd party mobile analytics libraries.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">Global Radio</a></span> <span class="year">(Jun 2015 – September 2015)</span></h3>
+                                <p>Working on the company's radio apps. Implementing new design for existing and new radio apps, implemented as targets of the same XCode project. Creating subclasses of "theme" classes and also UIViews subclasses to ensure they match design and optimising animations and AutoLayout configurations to make app more responsive and intuitive.</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">iOS Developer - <span class="place"><a href="#">DXI</a></span> <span class="year">(​May 2014 – May 2015)</span></h3>
+                                <ul class="social list-inline">
+
+                                    <li class="list-inline-item">
+                                      <p>
+                                        <strong>VoIP ​iPad App:</strong> targeted for call centre market. Heavy focus on UI animations/transitions, Auto-Layout, HTTP client, caching, multithreading and SIP protocol. Multithreading used on background calls to backend and json parsing. JSON parsing was implemented by subclasses JSONMappedModel, which in turn used utility methods from the superclass to transform JSON string values into classes. VoIP integration was done with pjsip 3rd party lib.
+                                      </p>
+                                      <p>
+                                        <strong>Management ​iPad App:</strong> for Admins and Supervisors of call centres, with several data visualization screens, displaying data retrieved both via HTTP polling and Socket.io connection. Strong use of animations, gestures and customized views/controls. Towards the last 3 months of this project we started experimenting with Swift 1.2 and implemented half a dozen UIViewControllers in Swift, as well as a few UIViews and many Model classes.
+                                      </p>
+
+                                    </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
+
+                        <div id="github-graph" class="github-graph">
+
+                        </div>
+
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.
+                        <div id="ghfeed" class="ghfeed">
+                        </div>
+
+                    </div>
+                </section> -->
+            </div>
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>London, UK</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">otaviokz@gmail.com</a></li>
+                                <!-- <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                      <h2 class="heading">iOS Skills</h2>
+                      <div class="content">
+                          <div class="skillset">
+
+                              <div class="item">
+                                  <h3 class="level-title">Swift &amp; Objective-C<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Using Swift since introduction"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="95%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">SwiftUI<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Have been using professionally since introduction"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="90%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">Core Data<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Advanced</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="80%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">Autolayout<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="90%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">RxSwift<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="90%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">tvOS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""></i>Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="95%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item">
+                                  <h3 class="level-title">Multithreading<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Expert</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="95%">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <p><a class="more-link" href="https://github.com/otaviokz"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p>
+                          </div>
+                      </div>
+                        <h2 class="heading">Other Skills</h2>
+                        <div class="content">
+
+                            <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">TDD<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">Agile<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
+                            </div>
+
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>
+
+                        </div>
+                    </div>
+                </aside> -->
+
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
+                                <h4 class="university">UFRGS (Brazil) - <span class="year">2008-2012</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Fluent Speaker <br class="visible-xs"/>
+                                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Fluent Speaker <br class="visible-xs"/>
+                                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                                    </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>Portuguese (BR):</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/>
+                                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+                        <div id="rss-feeds" class="content">
+
+                        </div>
+                    </div>
+                </aside> -->
+
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/5df4PHZPVRUTwGw70b6TxU?si=vY6oknydTbaSGsQ4v40G1g">Ocean Drive</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/0pwcxRIKQOJWXNmePWOQT7?si=5zwTUndkT8eIWKJr9p5f0A">Violin Covers for Studying</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1DX0Aaer4Jzfgm?si=t4mc2FKXQUCUCES2rrpjcA">Easy Classical</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/1SxvgSttLdFFF57JlxWyCK?si=sLvKaMKsTjqYdLedKVqi2A">Otavio's Study Mix</a></li>
+                                <!-- <li><i class="fas fa-headphones"></i> <a href="">XXXXXX</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2020</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
