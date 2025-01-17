@@ -79,6 +79,9 @@
 
                               <div class="desc text-left">
                                   <p>Mentoring aspiring iOS developers on their learning path, guiding them towards the right technologies and knowledge sources. It's a rewarding experience for anyone looking to support fellow developers while also developing leadership skills.</p>
+                                  <p>SELECT COUNT(DISTINCT CUSTOMER_UID) 
+                                    FROM nextbank.address_validation av, nextbank.profile_change_request pcr
+                                where av.profile_change_request_uid = pcr.profile_change_request_uid and pcr.profile_change_request_uid != :customer_id;</p>
                                   <p><a class="more-link" href="https://adplist.org/mentors/otavio-zabaleta" target="_blank"><i class="fas fa-external-link-alt rel="noopener noreferrer""></i>Find out more</a></p>
                               </div>
                             </div>
